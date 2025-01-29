@@ -1,58 +1,45 @@
-# Skin Cancer Classification
 
-## Overview
-This project aims to classify skin cancer using machine learning techniques. The model is trained on a dataset of skin lesion images and predicts the type of skin cancer based on image analysis.
+Fault Detection Pipeline for Steel Plate Defects
 
-## Features
-- Image preprocessing and augmentation
-- CNN-based deep learning model
-- Multi-class classification of skin cancer types
-- Model evaluation using various metrics
-- Deployment-ready architecture
+Overview
 
-## Dataset
-The dataset consists of images of different types of skin cancer, along with corresponding labels. Ensure that the dataset is properly structured before training the model.
+This project builds a machine learning pipeline to classify steel plate defects into seven categories, improving quality control in manufacturing.
 
-## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/Kshitij0605/Skin-Cancer-Classification.git
-   cd Skin-Cancer-Classification
-   ```
-2. Install required dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Ensure that you have the necessary dataset placed in the appropriate directory.
+Dataset & Defects
 
-## Usage
-1. Train the model:
-   ```sh
-   python train.py
-   ```
-2. Evaluate the model:
-   ```sh
-   python evaluate.py
-   ```
-3. Make predictions:
-   ```sh
-   python predict.py --image path/to/image.jpg
-   ```
+The dataset includes labeled defects:
 
-## Model Architecture
-- Convolutional Neural Network (CNN)
-- Batch normalization and dropout layers to improve generalization
-- Softmax activation for multi-class classification
+Pastry, Z-Scratch, K-Scratch, Stains, Dirtiness, Bumps, Other Faults.
 
-## Evaluation Metrics
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion Matrix
 
-## Results
-The model achieves a high classification accuracy on the test dataset. Further improvements can be made through hyperparameter tuning and data augmentation.
+Workflow
 
-## Contributing
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
+1. Data Preprocessing – Handling missing values, normalization, feature encoding.
+
+
+2. Model Training – Logistic Regression, KNN, Naïve Bayes, Decision Trees, Random Forest, SVM.
+
+
+3. Evaluation – Accuracy, Precision, Recall, F1 Score.
+
+
+4. Optimization & Feature Selection – PCA, Hyperparameter tuning (Future Scope).
+
+
+
+Installation
+
+pip install numpy pandas scikit-learn matplotlib seaborn
+
+Running the Project
+
+python preprocess.py  # Data cleaning  
+python train.py       # Model training
+
+Future Improvements
+
+Hyperparameter tuning.
+
+Deep learning models (CNNs).
+
+Real-time defect detection system.
